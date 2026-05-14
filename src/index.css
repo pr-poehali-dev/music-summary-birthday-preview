@@ -187,10 +187,20 @@
 }
 @keyframes wave-dance {
   from {
-    transform: scaleY(0.2);
+    transform: scaleY(0.15);
   }
   to {
     transform: scaleY(1);
+  }
+}
+
+/* Genre bars (scaleX) */
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 

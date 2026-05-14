@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Oswald', 'sans-serif'],
-				body: ['IBM Plex Sans', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
+				body: ['Rubik', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
