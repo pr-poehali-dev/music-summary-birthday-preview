@@ -4,89 +4,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 38 92% 60%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 92% 60%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 38 92% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Brand colors */
+    --gold: #f5a623;
+    --gold-dim: #c47d10;
+    --vinyl: #1a1a1a;
+    --groove: #2a2a2a;
   }
 }
 
@@ -96,6 +48,194 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    overflow: hidden;
   }
+}
+
+/* Vinyl record */
+.vinyl-record {
+  background: conic-gradient(
+    from 0deg,
+    #111 0deg,
+    #1a1a1a 4deg,
+    #111 8deg,
+    #1a1a1a 12deg,
+    #111 16deg,
+    #1a1a1a 20deg,
+    #111 24deg,
+    #1a1a1a 28deg,
+    #111 32deg,
+    #1a1a1a 36deg,
+    #111 40deg,
+    #1a1a1a 44deg,
+    #111 48deg,
+    #1a1a1a 52deg,
+    #111 56deg,
+    #1a1a1a 60deg,
+    #111 64deg,
+    #1a1a1a 68deg,
+    #111 72deg,
+    #1a1a1a 76deg,
+    #111 80deg,
+    #1a1a1a 84deg,
+    #111 88deg,
+    #1a1a1a 92deg,
+    #111 96deg,
+    #1a1a1a 100deg,
+    #111 104deg,
+    #1a1a1a 108deg,
+    #111 112deg,
+    #1a1a1a 116deg,
+    #111 120deg,
+    #1a1a1a 124deg,
+    #111 128deg,
+    #1a1a1a 132deg,
+    #111 136deg,
+    #1a1a1a 140deg,
+    #111 144deg,
+    #1a1a1a 148deg,
+    #111 152deg,
+    #1a1a1a 156deg,
+    #111 160deg,
+    #1a1a1a 164deg,
+    #111 168deg,
+    #1a1a1a 172deg,
+    #111 176deg,
+    #1a1a1a 180deg,
+    #111 184deg,
+    #1a1a1a 188deg,
+    #111 192deg,
+    #1a1a1a 196deg,
+    #111 200deg,
+    #1a1a1a 204deg,
+    #111 208deg,
+    #1a1a1a 212deg,
+    #111 216deg,
+    #1a1a1a 220deg,
+    #111 224deg,
+    #1a1a1a 228deg,
+    #111 232deg,
+    #1a1a1a 236deg,
+    #111 240deg,
+    #1a1a1a 244deg,
+    #111 248deg,
+    #1a1a1a 252deg,
+    #111 256deg,
+    #1a1a1a 260deg,
+    #111 264deg,
+    #1a1a1a 268deg,
+    #111 272deg,
+    #1a1a1a 276deg,
+    #111 280deg,
+    #1a1a1a 284deg,
+    #111 288deg,
+    #1a1a1a 292deg,
+    #111 296deg,
+    #1a1a1a 300deg,
+    #111 304deg,
+    #1a1a1a 308deg,
+    #111 312deg,
+    #1a1a1a 316deg,
+    #111 320deg,
+    #1a1a1a 324deg,
+    #111 328deg,
+    #1a1a1a 332deg,
+    #111 336deg,
+    #1a1a1a 340deg,
+    #111 344deg,
+    #1a1a1a 348deg,
+    #111 352deg,
+    #1a1a1a 356deg,
+    #111 360deg
+  );
+}
+
+/* Slide transitions */
+.slide-enter {
+  animation: slide-enter 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.slide-exit {
+  animation: slide-exit 0.4s ease-in forwards;
+}
+
+@keyframes slide-enter {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes slide-exit {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.98);
+  }
+}
+
+/* Sound wave bars */
+.wave-bar {
+  animation: wave-dance var(--dur, 0.8s) ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes wave-dance {
+  from {
+    transform: scaleY(0.2);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* Progress dots */
+.dot-active {
+  background: var(--gold);
+  transform: scale(1.3);
+}
+
+/* Noise texture overlay */
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Delayed animations */
+.delay-100 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+.delay-700 {
+  animation-delay: 0.7s;
+  opacity: 0;
 }
